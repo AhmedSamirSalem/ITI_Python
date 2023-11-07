@@ -1,0 +1,5 @@
+Loan = int(input("Please Enter The Loan Value : "))
+Years = int(input("Please Enter The number of years: "))
+Loan = (Loan+((Loan*12/100)*Years))
+monthly_install=(Loan/(12*Years))
+print("Your Monthly Installment is " + str(monthly_install) )

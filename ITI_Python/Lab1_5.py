@@ -1,0 +1,6 @@
+Timer_Reslution = int(input("Please Enter Timer Reslution: "))
+System_Frequecy = int(input("Please Enter System Frequecy  in mhz: "))
+Prescaler_Value = int(input("Please Enter Prescaler Value: "))
+Tick_Time = (Prescaler_Value/System_Frequecy)
+Overflow_Time= (Tick_Time *(2 **  Timer_Reslution)/1000)
+print("The Timer Would OverFlow in " + str(Overflow_Time)+" ms" )
